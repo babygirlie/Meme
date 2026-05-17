@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bg-music" src="music.mp3" loop></audio>
+
+
+    <!-- 1. MAIN HEADING PAGE -->
+    <div id="main-page" class="page-container">
+        <h1 class="neon-text">MEME SAGA</h1>
+        <p class="sub-text">Welcome to the collection.</p>
+        <button class="neon-btn" onclick="startCollection()">Enter ➔</button>
+    </div>
+
+    <!-- 2. MEME PAGES (1 to 100) -->
+    <div id="meme-page" class="page-container hidden">
+        <h2 class="page-title" id="meme-title">Meme #1</h2>
+        <div class="media-box">
+            <img id="meme-img" src="" alt="Meme Loading...">
+        </div>
+        <button class="neon-btn" onclick="nextMeme()">Next Meme ➔</button>
+    </div>
+
+    <!-- 3. REELS PAGES (2 Pages) -->
+    <div id="reels-page" class="page-container hidden">
+        <h2 class="page-title" id="reels-title">Instagram & YT Reels</h2>
+        <div id="reels-list">
+            <!-- Links will load here -->
+        </div>
+        <button class="neon-btn" id="reels-next-btn" onclick="nextReelsPage()">Next Page ➔</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
